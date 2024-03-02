@@ -87,12 +87,7 @@ public class Cook {
 
 运行完成后, 将打印出一个PlantUML格式的调用关系图:
 
-```puml
-left to right direction
-King ..> Chef
-Knight ..> Cook
-Chef ..> Cook
-```
+![PlantUML格式的调用关系图](./java/examples/example-1/diagram.png)
 
 ## 快速开始
 
