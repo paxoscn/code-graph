@@ -1,0 +1,139 @@
+import cn.paxos.codegraph.node.Source
+import org.junit.jupiter.api.Test
+import java.nio.charset.StandardCharsets
+import java.nio.file.Files
+import java.io.*
+import java.util.*
+import static java.util.Arrays.stream
+import static org.junit.jupiter.api.Assertions.*
+import static java.util.Map.*
+class SourceParserTest {
+    parse()
+        SourceParser
+            sourceParser =
+                    SourceParser(
+                    )
+        Source
+            source =
+                    sourceParser
+                            .parse(
+                            )
+        ByteArrayOutputStream
+            baos =
+                    ByteArrayOutputStream(
+                    )
+        PrintStream
+            printStream =
+                    PrintStream(
+                        baos
+                    )
+        source
+                .print(
+                    printStream
+                )
+        String
+            actual =
+                    String(
+                        baos
+                                .toByteArray(
+                                )
+                        StandardCharsets
+                                .UTF_8
+                    )
+        String
+            expected =
+                    String(
+                        Files
+                                .readAllBytes(
+                                    File(
+                                    )
+                                            .toPath(
+                                            )
+                                )
+                        StandardCharsets
+                                .UTF_8
+                    )
+        #null
+                .assertEquals(
+                    expected
+                    actual
+                )
+    class AAA {
+        BBB
+            b0 =
+                    BBB(
+                    )
+        int
+            i
+            j
+        #block
+            int
+                i
+        BBB()
+            BBB
+                b1 =
+                        BBB(
+                        )
+            BBB
+                b2 =
+                        #null
+                                .bbb(
+                                )
+            String
+                b3 =
+                        BBB(
+                        )
+                                .toString(
+                                )
+                                .toString(
+                                )
+            b0
+                    .ccc(
+                    )
+            b1
+                    .ccc(
+                    )
+            BBB(
+            )
+                    .ccc(
+                    )
+            #null
+                    .bbb(
+                    )
+                    .ccc(
+                    )
+            #null
+                    .bbb(
+                    )
+                    .ccc(
+                    )
+            BBB
+                    .ccc(
+                    )
+            #block
+                System
+                        .out
+                        .println(
+                        )
+            System
+                    .out
+                    .println(
+                    )
+        bbb()
+    }
+    class BBB {
+        BBB()
+            #null
+                    .super(
+                    )
+        ccc()
+            String[]
+                a0 =
+                        [
+                        ]
+            String[]
+                a1 =
+                        String(
+                        )
+    }
+}
